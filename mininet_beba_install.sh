@@ -79,8 +79,16 @@ deleted. Are you sure? (y/n) " -n 1 -r
     sudo chown -R mininet:mininet ~/beba-ctrl
 }
 
+# Download BEBA node for Mininet
+function download-mininet-node {
+    echo "Downloading BEBA node for Mininet..."
+    cd ~/
+    wget https://raw.githubusercontent.com/beba-eu/beba-utilities/master/beba.py
+}
+
 sudo apt-get update
 ~/mininet/util/install.sh -nt
+download-mininet-node
 beba-ctrl
 beba-switch
 
