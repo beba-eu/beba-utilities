@@ -1,13 +1,13 @@
 """
 Custom BEBA node
 
-This script enables/disables switch max verbosity and debugging with Valgrind via Mininet CLI parameters.
+This script enables/disables switch's max verbosity and debugging with Valgrind via Mininet CLI parameters.
 (NB Mininet's verbosity is not affected and can be configured via --verbosity/-v parameter)
 
-The following command starts Mininet with minimum verbosity level (it's equivalent to --switch user)
+The following command starts BEBA switch in Mininet with minimum verbosity level (it's equivalent to --switch user)
 sudo mn --topo single,4 --controller remote --mac --arp --custom beba.py --switch beba
 
-The following command starts Mininet with Valgrind and maximum verbosity level
+The following command starts BEBA switch in Mininet with Valgrind and maximum verbosity level
 sudo mn --topo single,4 --controller remote --mac --arp --custom beba.py --switch beba_dbg
 """
 
