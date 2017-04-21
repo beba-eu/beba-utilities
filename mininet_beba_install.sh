@@ -74,6 +74,7 @@ deleted. Are you sure? (y/n) " -n 1 -r
     
     # install beba-ctrl
     sudo pip install -r tools/pip-requires
+    sudo pip install -I eventlet==0.17.4
     sudo python ./setup.py install
 
     sudo chown -R mininet:mininet ~/beba-ctrl
