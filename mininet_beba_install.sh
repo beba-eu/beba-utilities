@@ -17,6 +17,7 @@ set -e
 set -o nounset
 
 function beba-switch {
+    sudo apt-get -y install cmake
     echo "Installing Beba switch based on ofsoftswitch13..."
     
     cd ~/
