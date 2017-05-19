@@ -36,8 +36,9 @@ it will be deleted. Are you sure? (y/n) " -n 1 -r
 
     # Resume the install:
     cd ~/beba-switch
-    ./boot.sh
-    ./configure
+    mkdir build
+    cd build
+    cmake .. -DCMAKE_BUILD_TYPE=Release
     make
     sudo make install
     cd ~/
